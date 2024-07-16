@@ -59,7 +59,6 @@ window.onload = function () {
         $(".video-details h4").text($text);
 
     };
-
 }
 
 

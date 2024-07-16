@@ -1,277 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andy的个人介绍</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy的个人介绍</title>
 
     <!--
-      - #SIDEBAR
+      - 引入图标
     -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
+    <!--
+      - 引入Css
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+      - 引入字体
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="overlay"></div>
+<main>
+    <!------------------------------------------------------个人信息------------------------------------------------------>
     <aside class="sidebar" data-sidebar>
 
-      <div class="sidebar-info">
+        <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Andy" width="80">
-        </figure>
+            <figure class="avatar-box">
+                <img src="./assets/images/avatar-0.png" alt="Andy" width="100">
+            </figure>
 
-        <div class="info-content">
-          <h1 class="name" title="Andy">Andy</h1>
+            <div class="info-content">
+                <h1 class="name" title="Andy">白曜榜</h1>
 
-          <p class="title">JAVA 开发者</p>
+                <p class="title">JAVA 开发者</p>
+            </div>
+
+            <button class="info_more-btn" onclick="unShowImg()" data-sidebar-btn>
+                <span>显示联系信息</span>
+
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+
         </div>
 
-        <button class="info_more-btn" onclick="unShowImg()" data-sidebar-btn>
-          <span>显示联系信息</span>
+        <div class="sidebar-info_more">
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+            <div class="separator"></div>
 
-      </div>
+            <ul class="contacts-list">
 
-      <div class="sidebar-info_more">
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">邮箱</p>
+
+                        <a href="mailto:richard@example.com" class="contact-link">15518936755@163.com</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">电话</p>
+
+                        <a href="tel:15518936755" class="contact-link">(+86) 15518936755</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">年龄</p>
+
+                        <time datetime="2003-01-27">Jan 27, 2003</time>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">户籍</p>
+
+                        <address>河南 南阳</address>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <div class="separator"></div>
+
+
+            <ul class="social-list">
+                <li><p style="font-size: xx-small;color:   hsl(35, 100%, 68%)">平台:</p></li>
+
+                <li class="social-item">
+                    <button class="social-link" onclick="showImg('weChat')">
+
+                        <ion-icon name="logo-wechat"></ion-icon>
+                    </button>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://qm.qq.com/q/325YMHcHUk" class="social-link">
+                        <ion-icon name="logo-tux"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://www.douyin.com/user/MS4wLjABAAAAwDf_tw7oUf8wTyvq9xNwFA6kXoctDbGorrAO0Z3ZkJ4"
+                       class="social-link">
+                        <ion-icon name="logo-tiktok"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://github.com/Andyliya" class="social-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://gitee.com/andy294111" class="social-link">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                </li>
+
+                <li><p style="font-size: xx-small;color:   hsl(35, 100%, 68%)">资助:</p></li>
+
+                <li class="social-item">
+                    <a onclick="showImg('zfbPay')" class="social-link">
+                        <ion-icon name="logo-alipay"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a onclick="showImg('wxPay')" class="social-link">
+                        <ion-icon name="logo-wechat"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
 
         <div class="separator"></div>
+        <div class="sidebar-info">
 
-        <ul class="contacts-list">
+            <img id="weChat" src="./assets/images/weChat.jpg"
+                 style="  border-radius: 10px; width: 180px;  height: 180px; display: none;" alt="2941115494"/>
 
-          <li class="contact-item">
+            <img id="zfbPay" src="./assets/images/zfbPay.jpg"
+                 style="  border-radius: 10px; width: 180px;  height: 180px; display: none;" alt="2941115494"/>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <img id="wxPay" src="./assets/images/wxPay.jpg"
+                 style="  border-radius: 10px; width: 180px;  height: 180px; display: none;" alt="2941115494"/>
 
-            <div class="contact-info">
-              <p class="contact-title">邮箱</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">15518936755@163.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">电话</p>
-
-              <a href="tel:15518936755" class="contact-link">(+86) 15518936755</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">年龄</p>
-
-              <time datetime="2003-01-27">Jan 27, 2003</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">户籍</p>
-
-              <address>河南 南阳</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-
-
-        <ul class="social-list">
-          <li><p style="font-size: xx-small;color:   hsl(35, 100%, 68%)">平台:</p> </li>
-
-          <li class="social-item">
-            <button  class="social-link" onclick="showImg('weChat')" >
-
-              <ion-icon name="logo-wechat"></ion-icon>
-            </button>
-          </li>
-
-          <li class="social-item">
-            <a href="https://qm.qq.com/q/325YMHcHUk" class="social-link">
-              <ion-icon name="logo-tux"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.douyin.com/user/MS4wLjABAAAAwDf_tw7oUf8wTyvq9xNwFA6kXoctDbGorrAO0Z3ZkJ4" class="social-link">
-              <ion-icon name="logo-tiktok"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/Andyliya" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://gitee.com/andy294111" class="social-link">
-              <ion-icon name="logo-google"></ion-icon>
-            </a>
-          </li>
-
-          <li><p style="font-size: xx-small;color:   hsl(35, 100%, 68%)">资助:</p> </li>
-
-          <li class="social-item">
-            <a onclick="showImg('zfbPay')" class="social-link">
-              <ion-icon name="logo-alipay"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a onclick="showImg('wxPay')" class="social-link">
-              <ion-icon name="logo-wechat"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="separator"></div>
-      <div class="sidebar-info">
-
-        <img id="weChat" src="./assets/images/weChat.jpg" style="  border-radius: 10px; width: 180px;  height: 180px; display: none;" alt="2941115494"/>
-
-      <img id="zfbPay" src="./assets/images/zfbPay.jpg" style="  border-radius: 10px; width: 180px;  height: 180px; display: none;" alt="2941115494"/>
-
-      <img id="wxPay" src="./assets/images/wxPay.jpg" style="  border-radius: 10px; width: 180px;  height: 180px; display: none;" alt="2941115494"/>
-
-      </div>
+        </div>
     </aside>
 
 
-
-
-
     <!--
-      - #main-content
+      - #右侧主要内容
     -->
 
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">关于我</h2>
-        </header>
-
-        <section class="about-text">
-          <h3>我是</h3>
-          <p>一个初出茅庐的00后,一个踏入IT行业的开发小白,一个怀着理想与报复,希望能创造一番事业的年轻人,一个渴望用代码改变世界的开发者.</p>
-
-          <h3>但我不是</h3>
-          <p>
-          一个经验丰富的职场老手，也不是独立开发的技术大牛。
-          </p>
-          <h3>我希望</h3>
-          <p>有机会参与到一些有挑战性的项目或复杂系统的开发，不断提升技术能力,突破自己的技术极限，在不断的学习中成长;
-            加入一个积极向上、团结协作的团队，与优秀的同事一起学习和进步;
-            运用自己的技能投入开发创造实际的开发成果;
-            通过不断学习和实践，弥补经验的不足，提升技术水平。</p>
-          <h3>我相信</h3>
-          <p>我希望通过不断学习和实践，弥补经验的不足，提升技术水平，成为一名优秀的软件开发工程师。</p>
-
-        </section>
-
-
         <!--
-          - service
+          - #NAVBAR
         -->
+        <!------------------------------------------------------切换按钮------------------------------------------------------>
+        <nav class="navbar">
 
-        <section class="service">
+            <ul class="navbar-list">
 
-          <h3 class="h3 service-title">我会</h3>
+                <li class="navbar-item">
+                    <button class="navbar-link  active" data-nav-link>个人信息</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>发展履历</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>项目作品</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>文章博客</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>查看简历</button>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!------------------------------------------------------个人信息------------------------------------------------------>
+
+        <article class="about  active" data-page="个人信息">
+
+            <header>
+                <h2 class="h2 article-title">关于我</h2>
+            </header>
+
+            <section class="about-text">
+                <h3 class="h3">我是</h3>
+                <p><strong>河南师范大学 软件学院 25届</strong>毕业生,在校认真学习专业知识并主动拓展相关编程技能,综合成绩优异,专业技能扎实;<br>
+                    拥有<strong>超聚变Java后端</strong>实习经验,熟悉企业级项目开发,积累丰富项目实战开发经验;<br>
+                    拥有多类个人学习项目,熟悉各类中间件的使用,可独立完成中小型项目开发.
+                </p>
+                <h3 class="h3">我拥有</h3>
+                <p>性格乐观开朗,<strong>情绪稳定</strong>,踏实能干,积极主动,对工作充满热情与期待;<br>
+                    有<strong>较强的学习能力</strong>和适应能力,能够快速补足技能空缺,不断提升和完善自己;<br>
+                    擅于独立思考和<strong>分析解决问题</strong>,勇于面对困难,积极主动解决问题;<br>
+                    拥有良好<strong>沟通和团队协作</strong>能力,积极在团队中贡献个人价值;<br>
+                    有较强的<strong>责任心和耐心</strong>,对待工作任务认真负责,不拖延不推诿,遵守规章制度;<br>
+                    <strong>热爱编程事业</strong>,主动提高个人能力和技术,能够满足开发工作的需要.
+                </p>
+                <h3 class="h3">我希望</h3>
+                <p>有机会<strong>加入</strong>到积极向上,团结协作的<strong>团队</strong>中去,参与到项目或系统的开发,贡献自己的技术和价值;<br>
+                    获得<strong>稳定</strong>的工作和<strong>发展</strong>机会,拥有更多的技术,接触更高的专业领域;<br>
+                    运用自己的技术技能技能投入到契合的开发工作,<strong>创造有价值的开发成果.</strong></p>
+                <h3 class="h3">我相信</h3>
+                <p>个人能力能够满足绝大多数的开发工作,能够在未来的发展道路中不断探索,不断进步,成为一名优秀的开发程序员,创造出更多有价值的成果.</p>
+            </section>
+
+
+            <!--
+              - service
+            -->
+
+            <section class="service">
+
+                <h3 class="h3 service-title">技术栈</h3>
 
           <ul class="service-list">
 
@@ -286,7 +275,7 @@
                 <h4 class="h4 service-item-title">Java开发</h4>
 
                 <p class="service-item-text">
-                  主要使用java语言进行代码开发,能够使用多种技术框架和组件.
+                    精通Java语言,熟悉常用的Java API,包括异常处理,数据结构,集合框架,网络编程,多线程,I/O,JDBC,XML等;
                 </p>
               </div>
 
@@ -299,10 +288,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">数据库</h4>
+                <h4 class="h4 service-item-title">Spring框架</h4>
 
                 <p class="service-item-text">
-                  根据业务需求构建数据模型,进而进行数据库表的构造、优化与运用,能够灵活使用国内外多种主流数据库类型.
+                    熟悉Spring框架,包括Spring MVC,Spring Boot,Spring Cloud,RuoYi,SpringSecurity等,能够根据业务需求进行系统设计和开发。
                 </p>
               </div>
 
@@ -311,14 +300,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">中间件</h4>
+                <h4 class="h4 service-item-title">数据库</h4>
 
                 <p class="service-item-text">
-                  熟练掌握并能够灵活运用多种中间件，为项目的开发提供高效的技术支持。
+                    熟悉主流数据库,如MySql,达梦,PostgreSQL及Redis,ElsasticSearch,Neo4j(图数据库)等,能够根据业务需求进行数据库设计和优化。
                 </p>
               </div>
 
@@ -334,7 +323,7 @@
                 <h4 class="h4 service-item-title">服务器</h4>
 
                 <p class="service-item-text">
-                  使用脚本,容器或其他方法将组件,项目及服务部署到不同类型服务器上，构建项目所需环境,确保项目的高效稳定运行.
+                    拥有运维知识,熟悉Linux命令,shell脚本,掌握Docker容器技术,熟悉常用中间件的多节点搭建和配置;
                 </p>
               </div>
 
@@ -347,949 +336,1014 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">前端</h4>
+                <h4 class="h4 service-item-title">Web前端开发</h4>
 
                 <p class="service-item-text">
-                  会一些前端知识,能够使用主要组件及构建页面,这些使接口开发及联调更有效.
+                    熟悉HTML,CSS,JavaScript和Vue,Vite框架,能够使用Pinia,ElementPlus进行开发。
                 </p>
               </div>
 
             </li>
 
-            <li class="service-item">
+              <li class="service-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
+                  <div class="service-icon-box">
+                      <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                  </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">测试</h4>
+                  <div class="service-content-box">
+                      <h4 class="h4 service-item-title">网络编程</h4>
 
-                <p class="service-item-text">
-                简单的测试方法,及时处理问题,尽量减少开发成果出现的问题。
-                </p>
-              </div>
+                      <p class="service-item-text">
+                          理解TCP/IP和UDP协议工作原理,了解HTTP,HTTPS,FTP等协议;
+                      </p>
+                  </div>
 
-            </li>
+              </li>
 
           </ul>
 
-        </section>
+            </section>
+
+
+            <!--
+              - testimonials
+            -->
+
+            <section class="testimonials">
+
+                <h3 class="h3 testimonials-title">同事评价</h3>
+
+                <ul class="testimonials-list has-scrollbar">
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60"
+                                     data-testimonials-avatar>
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>同事老王</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    “Andy的技术能力很强，他熟悉 Java
+                                    开发技术，能够快速上手新项目，并且能够解决项目中遇到的技术难题。此外他对于功能的实现及问题的解决比较有经验,在开发周期内将功能得以很好地实现.。”
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60"
+                                     data-testimonials-avatar>
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>同事小杨</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    “Andy 的学习能力强，他总是能够快速学习新技术，并将其应用到项目中。同时他还他乐于分享自己的知识，经常在技术分享会中交流经验，帮助团队成员解决问题,提升技术能力。”
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img src="./assets/images/avatar-4.png" alt="Emily evans" width="60"
+                                     data-testimonials-avatar>
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>经理涂总</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    “他工作认真负责，积极主动，能够按时完成任务，并且保证代码质量。还具备良好的项目管理能力，能够合理规划项目进度，与团队成员保持良好的沟通，及时了解项目进展情况，并根据实际情况进行调整。并进行有效的风险控制。
+                                    ”
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+
+                            <figure class="testimonials-avatar-box">
+                                <img src="./assets/images/my-avatar.png" alt="Henry william" width="60"
+                                     data-testimonials-avatar>
+                            </figure>
+
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>主管李老师</h4>
+
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    张三在工作中表现出了极高的专业素养，他对待任务总是认真负责，能够准时完成项目节点，并且经常超出预期地解决问题。不仅自己的技术能力强，还乐于帮助同事，经常能看到他耐心地指导新成员，提升了整个团队的技术水平。
+                                    张三具有持续学习的热情，他总是关注行业动态，学习最新技术，并将所学应用到实际工作中，不断提升自己的技术深度和广度。他在项目中的成长非常快，从一名普通的开发者逐渐成长为团队中的技术骨干，他的进步有目共睹。
+                                    总的来说，张三是一位非常优秀的 Java
+                                    程序员，他的技术能力、工作态度和团队精神都值得赞扬。他的存在极大地提升了我们团队的技术实力和项目质量。我相信，张三将继续在技术道路上不断前进，为团队和公司创造更多价值。
+                                </p>
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <!--
+              - 奖状模态
+            -->
+
+            <div class="modal-container" data-modal-container>
+
+                <div class="overlay" data-overlay></div>
+
+                <section class="testimonials-modal">
+
+                    <button class="modal-close-btn" data-modal-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                    <div class="modal-img-wrapper">
+                        <figure class="modal-avatar-box">
+                            <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                        </figure>
+
+                        <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                    </div>
+
+                    <div class="modal-content">
+
+                        <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                        <time datetime="2021-06-14">21 Jun, 2003</time>
+
+                        <div data-modal-text>
+                            <p>
+                                Richard被聘请来创建一个企业形象，我们对她所做的工作非常满意，她有很多经验，非常关心客户的需求，包括客户的需求、客户的需求、客户的需求、客户的需求、客户的需求、客户的需求、客户的需求、客户的需求等
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+
+
+            <section class="skill">
+
+                <h3 class="h3 skills-title">掌握情况</h3>
+
+                <ul class="skills-list content-card">
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Java 开发</h5>
+                            <data value="90">90%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 90%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Spring框架</h5>
+                            <data value="85">85%</data>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 85%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">组件及数据库</h5>
+                            <data value="80">80%</data>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 80%;"></div>
+                        </div>
+
+                    </li>
+
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">WEB前端开发</h5>
+                            <data value="30">30%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 30%;"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">服务器运维</h5>
+                            <data value="20">20%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 20%;"></div>
+                        </div>
+                    </li>
+
+                    <li class="skills-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">其他技能</h5>
+                            <data value="60">60%</data>
+                        </div>
+
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 60%;"></div>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
 
 
         <!--
-          - testimonials
+          - #RESUME
         -->
 
-        <section class="testimonials">
+        <article class="resume" data-page="发展履历">
 
-          <h3 class="h3 testimonials-title">奖项证书及同事评价</h3>
+            <header>
+                <h2 class="h2 article-title">发展履历</h2>
+            </header>
 
-          <ul class="testimonials-list has-scrollbar">
+            <section class="timeline">
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>同事老王</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    “Andy的技术能力很强，他熟悉 Java 开发技术，能够快速上手新项目，并且能够解决项目中遇到的技术难题。此外他对于功能的实现及问题的解决比较有经验,在开发周期内将功能得以很好地实现.。”
-                  </p>
+                    <h3 class="h3">河南师范大学<span style="font-size: 16px;color: grey"><small style="color: rgb(204, 180, 100)">本科&nbsp;&nbsp;&nbsp;</small>河南 新乡</span></h3>
                 </div>
 
-              </div>
-            </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                <ol class="timeline-list">
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
+                    <li class="timeline-item">
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>同事小杨</h4>
+                        <h4 class="h4 timeline-item-title">软件学院-计算机科学与技术</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    “Andy 的学习能力强，他总是能够快速学习新技术，并将其应用到项目中。同时他还他乐于分享自己的知识，经常在技术分享会中交流经验，帮助团队成员解决问题,提升技术能力。”
-                  </p>
+                        <span>2021.09 —  2025.07</span>
+
+                        <p class="timeline-text">
+                            移动开发方向,主修Java语言,完成学业并拓展专业知识和技术,专业成绩优异;<br/>
+                            掌握Web开发，软件工程，操作系统，数据结构算法、网络工程等技术.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">大学生通讯社-记者部部长</h4>
+
+                        <span>2021 — 2023</span>
+
+                        <p class="timeline-text">
+                            于21年加入大学生通讯社记者部,和摄影部组成大学生通讯社;<br/>
+                            部门负责学校新闻的拍摄和报道,校园心声的采访,校园记录类视频的拍摄工作;<br/>
+                            参与多次部门实践活动,取得一定成果,于22年成为记者部部长,于23年获得优秀部门干事称号.
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">个人项目-添妙电商平台</h4>
+
+                        <span>2023.10-2023.11</span>
+
+                        <p class="timeline-text">
+                            提供移动端在线购物和web后台管理的购物平台系统,并设有管理员后台;<br/>
+                            移动端App为用户提供商品浏览,下单,支付,管理等功能;<br/>
+                            web端后台为商家提供商品、订单、发货地址的发布和管理等功能;
+                        </p>
+
+                    </li>
+
+                </ol>
+
+            </section>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">超聚变数字技术有限公司<span style="font-size: 16px;color: grey"><small style="color: rgb(204, 180, 100)">实习&nbsp;&nbsp;&nbsp;</small>河南 郑州</span></h3>
                 </div>
 
-              </div>
-            </li>
+                <ol class="timeline-list">
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                    <li class="timeline-item">
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
+                        <h4 class="h4 timeline-item-title">城企数字事业部-Java后端</h4>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>经理涂总</h4>
+                        <span>2024.04 — 2024.09</span>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    “他工作认真负责，积极主动，能够按时完成任务，并且保证代码质量。还具备良好的项目管理能力，能够合理规划项目进度，与团队成员保持良好的沟通，及时了解项目进展情况，并根据实际情况进行调整。并进行有效的风险控制。 ”
-                  </p>
-                </div>
+                        <p class="timeline-text">
+                            郑州超聚变技术有限公司是一家专注于算力基础设施和服务的公司，提供计算机软硬件及相关技术产品，服务于多个行业，并在全球设有研发和服务中心。
+                        </p>
 
-              </div>
-            </li>
+                    </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                    <li class="timeline-item">
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/my-avatar.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
+                        <h4 class="h4 timeline-item-title">一道墙-安全运营支撑平台(WEB,大屏) </h4>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>主管李老师</h4>
+                        <span>项目描述</span>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    张三在工作中表现出了极高的专业素养，他对待任务总是认真负责，能够准时完成项目节点，并且经常超出预期地解决问题。不仅自己的技术能力强，还乐于帮助同事，经常能看到他耐心地指导新成员，提升了整个团队的技术水平。
-                    张三具有持续学习的热情，他总是关注行业动态，学习最新技术，并将所学应用到实际工作中，不断提升自己的技术深度和广度。他在项目中的成长非常快，从一名普通的开发者逐渐成长为团队中的技术骨干，他的进步有目共睹。
-                    总的来说，张三是一位非常优秀的 Java 程序员，他的技术能力、工作态度和团队精神都值得赞扬。他的存在极大地提升了我们团队的技术实力和项目质量。我相信，张三将继续在技术道路上不断前进，为团队和公司创造更多价值。
-                  </p>
-                </div>
 
-              </div>
-            </li>
+                        <p class="timeline-text">
+                            对承接开发项目“一道墙-安全运营支撑平台”部分功能模块的开发,项目主要为客户提供敏感数据、威胁、漏洞、安全事件的扫描采集与管理并响应生成处理方案的网络安全防护平台。
+                        </p>
 
-          </ul>
+                        <span>工作内容</span>
+                        <p class="timeline-text">
+                            1. 负责 安全运营知识库、运维监控、安全实体分析 模块的系统设计、功能开发和维护;<br/>
+                            2. 使用MinIO 和Apache POI 实现文件(图片，附件等）上传、存储、解析,并设置访问限制;<br/>
+                            3. 通过Prometheus、Hertzbeat 和 SSH/SNAP 协议进行系统（服务器，进程，服务，组件）监控，并实现指标异常响应;<br/>
+                            4. 利用图数据库和ES实现实体信息的检索和树状图谱解析，实现实体间关系的可视化展示;<br/>
+                            5. 调用外部接口，消息系统，缓存和数据存储机制，加密机制等实现其他业务功能;<br/>
+                            6. 进行文档整理，接口联调，脚本编写，项目部署，单元测试及功能优化，版本迭代等.
+                        </p>
+                        <span>工作成果</span>
+                        <p class="timeline-text">
+                            1. 顺利完成负责模块的开发，通过测试且在稳定版本成功交付;<br/>
+                            2. 运维监控模块利用不同监控协议实现对项目平台涉及的操作系统环境和各组件、各服务运行状态的稳定监测;<br/>
+                            3. 安全实体分析模块利用图数据库和ES实现实体信息的检索和树状图谱解析，并实现实体间关系的可视化展示;<br/>
+                            4. 安全运营知识库模块实现平台文章的发布管理,并实现文章的检索和展示,同时提供平台的公告广播置顶等功能;<br/>
+                            5. 收到主管和同事的广泛认可,被授予开发组星光奖.
+                        </p>
 
-        </section>
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">未来规划</h4>
+
+                        <span>             </span>
+
+                        <p class="timeline-text">
+                            1. 寻找合适工作,投入事业发展;<br/>
+                            2. 继续深入学习软件开发技术,提升自己的技术能力;<br/>
+                            3. 积极探索和参与技术社区,与同行交流学习.<br/>
+                        </p>
+
+                    </li>
+                </ol>
+
+            </section>
+
+            <!--
+              - clients
+            -->
+            <!-------------------------------------------------------履历概览----------------------------------------------------->
+            <section class="clients">
+
+                <h3 class="h3 clients-title">履历概览</h3>
+
+                <ul class="clients-list has-scrollbar">
+
+                    <li class="clients-item">
+                        <a href="https://www.htu.edu.cn" title="河南师范大学主页">
+                            <img src="./assets/images/logo-htu.png" alt="client logo">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="https://www.htu.edu.cn/sw/main.htm" title="河南师范大学软件学院主页">
+                            <img src="./assets/images/logo-htu3.png" alt="client logo">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="https://100.htu.edu.cn/main.htm" title="河南师范大学校园主页">
+                            <img src="./assets/images/logo-htu2.png" alt="client logo">
+                        </a>
+                    </li>
+
+
+
+                    <li class="clients-item">
+                        <a href="https://www.xfusion.com" title="超聚变数字技术有限公司主页">
+                            <img src="./assets/images/logo-xfusion.svg" alt="client logo">
+                        </a>
+                    </li>
+
+
+                    <li class="clients-item">
+                        <a href="https://www.qinwei.com" title="河南秦尉数字技术有限公司官网">
+                            <img src="./assets/images/logo-qw.svg" alt="client logo">
+                        </a>
+                    </li>
+
+                    <li class="clients-item">
+                        <a href="https://www.an-dy.us.kg" title="Andy的个人网页">
+                            <img src="./assets/images/logo.png" alt="client logo">
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
 
 
         <!--
-          - 奖状模态
+          - #PORTFOLIO
         -->
+        <!------------------------------------------------------项目作品------------------------------------------------------>
+        <article class="portfolio" data-page="项目作品">
 
-        <div class="modal-container" data-modal-container>
+            <header>
+                <h2 class="h2 article-title">作品集</h2>
+            </header>
 
-          <div class="overlay" data-overlay></div>
+            <section class="projects">
 
-          <section class="testimonials-modal">
+                <ul class="filter-list">
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
+                    <li class="filter-item">
+                        <button class="active" data-filter-btn>All</button>
+                    </li>
 
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
+                    <li class="filter-item">
+                        <button data-filter-btn>Web</button>
+                    </li>
 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
+                    <li class="filter-item">
+                        <button data-filter-btn>App</button>
+                    </li>
 
-            <div class="modal-content">
+                    <li class="filter-item">
+                        <button data-filter-btn>Others</button>
+                    </li>
 
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+                </ul>
 
-              <time datetime="2021-06-14">21 Jun, 2003</time>
+                <div class="filter-select-box">
 
-              <div data-modal-text>
-                <p>
-                  Richard被聘请来创建一个企业形象，我们对她所做的工作非常满意，她有很多经验，非常关心客户的需求，包括客户的需求、客户的需求、客户的需求、客户的需求、客户的需求、客户的需求、客户的需求、客户的需求等
-                </p>
-              </div>
+                    <button class="filter-select" data-select>
 
-            </div>
+                        <a class="select-value" data-selecct-value>Select category</a>
 
-          </section>
+                        <a class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </a>
 
-        </div>
+                    </button>
+
+                    <ul class="select-list">
+
+                        <li class="select-item">
+                            <button data-select-item>All</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Web</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>App</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Others</button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="project-list">
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="https://tmiao.an-dy.us.kg/Login">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Tmiao电商平台-Web</h3>
+
+                            <p class="project-category">Web 电商管理后台</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="app">
+                        <a href="https://tmaio.an-dy.us.kg/user">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-8.jpg" alt="orizon" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Tmiao电商平台-App</h3>
+
+                            <p class="project-category">App 电商购物平台</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-home.png" alt="fundo" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">个人主页-介绍</h3>
+
+                            <p class="project-category">Web 个人介绍主页</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="app">
+                        <a href="https://douyin.an-dy.us.kg">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-dy.png" alt="brawlhalla" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">仿抖音-学习修改版</h3>
+
+                            <p class="project-category">App 源自大佬zyrono并进行修改的仿照抖音页面的短视频平台,仅用于学习</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="app">
+                        <a href="https://blog.an-dy.us.kg">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-3.jpg" alt="dsm." loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">GitHub博客</h3>
+
+                            <p class="project-category">Web/App 依托于GitHub-Pages搭建的个人博客</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="https://web.an-dy.us.kg/admin">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-2.png" alt="metaspark" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">服务器仪表盘</h3>
+
+                            <p class="project-category">Web 个人服务器管理后台</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="https://proxy.an-dy.us.kg">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-proxy.png" alt="summary" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">GitHub代理</h3>
+
+                            <p class="project-category">Web 用于拉取仓库和依赖的代理,仅限个人使用</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="https://web.an-dy.us.kg/nacos/#/login">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-nacos.png" alt="task manager" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Nacos工具</h3>
+
+                            <p class="project-category">Web Nacos远程调用工具,仅限个人使用</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-image.png" alt="arrival" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">图床</h3>
+
+                            <p class="project-category">Web 个人的图片上传管理存储库</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="others">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">其他项目</h3>
+
+                            <p class="project-category">Web 开发中的项目暂未收录</p>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
 
 
         <!--
-          - clients
+          - #BLOG
         -->
+        <!------------------------------------------------------文章博客------------------------------------------------------>
+        <article class="blog" data-page="文章博客">
 
-        <section class="clients">
+            <header>
+                <h2 class="h2 article-title">文章博客</h2>
+            </header>
 
-          <h3 class="h3 clients-title">履历概览</h3>
+            <section class="blog-posts">
 
-          <ul class="clients-list has-scrollbar">
+                <ul class="blog-posts-list">
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
+                    <li class="blog-post-item">
+                        <a href="#">
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-yq.png" alt="Design conferences in 2022" loading="lazy">
+                            </figure>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
+                            <div class="blog-content">
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
+                                <div class="blog-meta">
+                                    <p class="blog-category">笔记</p>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
+                                    <span class="dot"></span>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
 
-          </ul>
+                                <h3 class="h3 blog-item-title">语雀-笔记</h3>
 
-        </section>
+                                <p class="blog-text">
+                                    Andy的语雀笔记.
+                                </p>
 
-      </article>
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-po.png" alt="Best fonts every designer" loading="lazy">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">脑图-思维导图</h3>
+
+                                <p class="blog-text">
+                                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-github.png" alt="Design digest #80" loading="lazy">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">Github上的分享</h3>
+
+                                <p class="blog-text">
+                                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam
+                                    corporis suscipit.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-csdn.png" alt="UI interactions of the week" loading="lazy">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">CSDN上的笔记</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">CSDN上的笔记</h3>
+
+                                <p class="blog-text">
+                                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco
+                                    laboris nisi.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-leetcode.png" alt="The forgotten art of spacing" loading="lazy">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">LeetCode上的刷题笔记</h3>
+
+                                <p class="blog-text">
+                                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a href="#">
+
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-others.png" alt="Design digest #79" loading="lazy">
+                            </figure>
+
+                            <div class="blog-content">
+
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+
+                                    <span class="dot"></span>
+
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+
+                                <h3 class="h3 blog-item-title">其他文章</h3>
+
+                                <p class="blog-text">
+                                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                                </p>
+
+                            </div>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
 
 
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">履历</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+        <!--
+          - #CONTACT
+        -->
+        <!------------------------------------------------------联系方式------------------------------------------------------>
+        <article class="contact" data-page="查看简历">
+                        <header>
+                            <h2 class="h2 article-title">查看简历</h2>
+                        </header>
+            <div style="display: flex; margin-bottom: 15px;">
+                <h3 class="h3">简历预览和下载&ensp;</h3><a href="./assets/pdf/resume.pdf" style="color: gold;" download="resume.pdf" class="btn">下载简历</a>
+                <svg t="1727888749781" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4610" width="20" height="20"><path d="M310.3488 893.7728a35.2 35.2 0 0 1 30.2592 35.3792c0 20.6336-17.664 36.9664-37.6832 36.9664H93.184c-49.408 0-93.056-41.9328-93.056-90.5216V91.392c0-48.4864 43.52-91.264 93.056-91.264h743.808c49.408 0 93.056 42.6496 93.056 91.264v163.6096c-0.8704 19.7888-18.5344 35.2512-37.7088 35.2512-19.3024 0-34.304-13.2352-36.8128-30.4128V116.1216c0-25.6-20.1728-44.3904-46.0288-44.3904H116.6592c-24.3456 0-44.3904 18.944-44.3904 44.3904v734.2336c0 23.8848 20.1728 43.52 44.3904 43.52h193.6896v-0.1024z m379.8528-520.2944c183.6032 0 333.6704 144.7168 333.6704 324.7616 0 180.0704-150.1952 325.632-333.6704 325.632-185.2672 0-333.696-145.5616-333.696-325.632 0-180.1728 148.3008-324.7616 333.696-324.7616z m0 592.64c150.9376 0 274.9184-119.9616 274.9184-267.9808 0-147.2-124.1088-267.264-275.0464-267.264-151.8336 0-275.9424 120.064-275.9424 267.264 0.128 148.0192 124.2368 267.9808 276.0704 267.9808zM363.1872 355.328c12.6208 0 22.7072 9.0368 22.7072 21.4016s-10.0864 22.272-22.7072 22.272H165.1968a22.4 22.4 0 0 1-22.6816-22.272c0-12.3648 10.0864-21.4016 22.6816-21.4016h197.9904z m270.7712-68.2496c0 12.3648-10.112 22.272-22.7072 22.272H165.1968a22.4 22.4 0 0 1-22.6816-22.272 23.04 23.04 0 0 1 22.6816-23.0144h446.0544a23.04 23.04 0 0 1 22.7072 23.0144z m153.344-88.8064c0 12.3648-10.0864 21.4016-22.7072 21.4016H165.1968c-12.5952 0-22.6816-9.0368-22.6816-21.4016s10.0864-22.272 22.6816-22.272h599.5264a22.528 22.528 0 0 1 22.5792 22.272z m-74.0352 678.3488a23.808 23.808 0 0 1-37.7088 0L579.0976 768c-5.9392-6.5536-8.448-15.5904-7.5776-26.3424a19.1232 19.1232 0 0 1 19.3024-17.3056h62.0288v-101.0432c0-12.3648 8.448-20.6592 21.0688-20.6592h40.2432c12.5952 0 21.0432 8.2944 21.0432 20.6592v101.0432h62.9248c9.216 0 17.664 7.424 20.1984 17.3056 0.8704 9.8816-2.5344 18.944-9.216 26.3424l-95.8464 108.5952zM674.176 562.432c-12.6208 0-21.0688-8.2944-21.0688-20.6592 0-10.752 8.448-20.6592 21.0688-20.6592h40.2176c12.6208 0 21.0688 9.9072 21.0688 20.6592 0 12.3648-8.448 20.6592-21.0688 20.6592h-40.2176z" fill="#f4ea2a" p-id="4611"></path></svg>
             </div>
+            <figure class="project-img">
+                <img src="./assets/images/resume.png" alt="resume" loading="lazy">
+            </figure>
 
-            <h3 class="h3">河南师范大学</h3>
-          </div>
+<!--            <header>-->
+<!--                <h2 class="h2 article-title">查看简历</h2>-->
+<!--            </header>-->
 
-          <ol class="timeline-list">
 
-            <li class="timeline-item">
+<!--            <section class="about-text">-->
 
-              <h4 class="h4 timeline-item-title">大学生通讯社</h4>
+<!--                <h3 class="h3 form-title">基本信息</h3>-->
+<!--                <p class="contact-text"><ion-icon name="call-outline"></ion-icon>电话: 123456789</p>-->
+<!--                <p class="contact-text"><ion-icon name="mail-outline"></ion-icon>邮箱: 123456789@qq.com</p>-->
+<!--                <p class="contact-text"><ion-icon name="location-outline"></ion-icon>地址: 中国</p>-->
 
-              <span>2021 — 2022 —  2023</span>
+<!--                <h3 class="h3 form-title">社交平台</h3>-->
+<!--                <a href="https://github.com/Andyliya"  class="contact-text"><ion-icon name="logo-github"></ion-icon>GitHub: https://github.com/Andyliya</a>-->
+<!--                <p class="contact-text"><ion-icon name="logo-gitee"></ion-icon>Gitee: https://gitee.com/andy294111</p>-->
+<!--                <p class="contact-text"><ion-icon name="logo-csdn"></ion-icon>CSDN: https://blog.csdn.net/Andy6564</p>-->
+<!--                <p class="contact-text"><ion-icon name="logo-leetcode"></ion-icon>LeetCode: https://leetcode.cn/u/andy-ihz</p>-->
+<!--                <p class="contact-text"><ion-icon name="logo-yuque"></ion-icon>语雀: https://www.yuque.com/u42351543</p>-->
+<!--                <p class="contact-text"><ion-icon name="logo-douyin"></ion-icon>抖音: https://www.douyin.com/user/MS4wLjABAAAAwDf_tw7oUf8wTyvq9xNwFA6kXoctDbGorrAO0Z3ZkJ4</p>-->
+<!--                <p class="contact-text"><ion-icon name="logo-bilibili"></ion-icon>B站: https://space.bilibili.com/399633517</p>-->
 
-              <p class="timeline-text">
-                大学生通讯社成员  ---  社长
-              </p>
+<!--                <h3 class="h3 form-title">赞赏</h3>-->
+<!--                <p class="contact-text">微信赞赏码</p>-->
+<!--                <img src="./assets/images/weChat.jpg" alt="微信赞赏码"  style="display: none" onclick="showImg('wxPay')">-->
+<!--                <p class="contact-text">支付宝赞赏码</p>-->
+<!--                <img src="./assets/images/zfbPay.jpg" alt="支付宝赞赏码" style="display: none" onclick="showImg('zfbPay')">-->
 
-            </li>
 
-            <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">发展规划</h4>
+<!--            </section>-->
 
-              <span>2001 — 2003 — 2024</span>
-
-              <p class="timeline-text">
-              基础课程学习 --- 实训课程  --- 实习课程
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">毕业时间</h4>
-
-              <span>2025</span>
-
-              <p class="timeline-text">
-                毕业于2025年
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">工作经历</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">超聚变数字技术有限公司</h4>
-              <span>河南 郑州</span>
-
-              <span>2024.04 — 2025.01</span>
-
-
-
-
-              <p class="timeline-text">
-                郑州超聚变技术有限公司是一家专注于算力基础设施和服务的公司，提供计算机软硬件及相关技术产品，服务于多个行业，并在全球设有研发和服务中心。
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">  <span>工作内容</span></h4>
-
-
-              <p class="timeline-text">
-                1. 负责公司内部系统的维护和升级，确保系统稳定运行。
-                2. 协助开发团队进行系统测试和调试，提高系统性能和稳定性。
-                3. 负责公司内部网络设备的配置和维护，确保网络畅通。
-                4. 协助解决客户问题，提供技术支持。
-                5. 参与公司内部培训和分享会，提高团队技术水平。
-              </p>
-
-            </li>
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">  <span>工作成果</span></h4>
-
-
-              <p class="timeline-text">
-                1. 负责公司内部系统的维护和升级，确保系统稳定运行。
-                2. 协助开发团队进行系统测试和调试，提高系统性能和稳定性。
-                3. 负责公司内部网络设备的配置和维护，确保网络畅通。
-                4. 协助解决客户问题，提供技术支持。
-                5. 参与公司内部培训和分享会，提高团队技术水平。
-              </p>
-
-            </li>
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">技能提升</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java 开发</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">组件 应用</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WEB 开发</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">其他技能</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">作品集</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">博客</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">设计</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">2022年的设计会议</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">每个设计师的最佳字体</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">设计文摘 #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">ui 本周互动</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">他忘记了间距的艺术</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">设计文摘 #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Play</h2>
-        </header>
-
-
-<!--        <section class="mapbox" data-mapbox>-->
-<!--          <figure>-->
-<!--            <iframe-->
-<!--              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"-->
-<!--              width="400" height="300" loading="lazy"></iframe>-->
-<!--          </figure>-->
-<!--        </section>-->
-
-
-
-<div style="display: flex;margin: auto;flex-direction: column;justify-content: center;align-items: center;">
-  <video src="./assets/video/video1.mp4" poster="" width="800px" controls="true" style="border-radius: 20px;" volume="true"  id="video-details"></video>
-  <iframe frameborder="no" border="0" width="800px" src="//music.163.com/outchain/player?type=0&id=8816800831"></iframe>
-</div>
-
-
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">联系表格</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
+        </article>
 
     </div>
 
 
-  </main>
+</main>
 
 
+<!--
+  - custom js link
+-->
+<script src="./assets/js/script.js">
 
+</script>
 
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js">
-
-  </script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-
+<!--
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    function checkPassword (){
+        const password = prompt("为防止信息泄露,请输入校验口令：");
+        if (password === "andy") {
+            alert("口令正确！");
+            document.getElementById('overlay').style.display = "none";
+        } else {
+            alert("口令错误！请联系管理员获取口令:微信2941115494");
+            if(confirm("是否重新输入?")){checkPassword()}else {
+                alert("请联系开发者获取查看口令:微信2941115494");
+            }
+        }
+    }
+    window.onload = checkPassword;
 
     function showImg(param) {
-      const qrcode = document.getElementById(param);
-      const qrcode1 = document.getElementById('wxPay');
-      const qrcode2 = document.getElementById('zfbPay');
-      const qrcode3 = document.getElementById('weChat');
-      if (qrcode.style.display === 'none') {
-        qrcode1.style.display = 'none';
-        qrcode2.style.display = 'none';
-          qrcode3.style.display = 'none';
-        qrcode.style.display = 'block'; // 显示二维码
-      } else {
-        qrcode.style.display = 'none'; // 隐藏二维码
-      }
+        const qrcode = document.getElementById(param);
+        const qrcode1 = document.getElementById('wxPay');
+        const qrcode2 = document.getElementById('zfbPay');
+        const qrcode3 = document.getElementById('weChat');
+        if (qrcode.style.display === 'none') {
+            qrcode1.style.display = 'none';
+            qrcode2.style.display = 'none';
+            qrcode3.style.display = 'none';
+            qrcode.style.display = 'block'; // 显示二维码
+        } else {
+            qrcode.style.display = 'none'; // 隐藏二维码
+        }
     }
 
-        function unShowImg() {
-      document.getElementById('wxPay').style.display = 'none';
+    function unShowImg() {
+        document.getElementById('wxPay').style.display = 'none';
 
-      document.getElementById('zfbPay').style.display = 'none';
+        document.getElementById('zfbPay').style.display = 'none';
 
-      document.getElementById('weChat').style.display = 'none';
+        document.getElementById('weChat').style.display = 'none';
 
     }
 
 
-  </script>
+</script>
 
 
 </body>
