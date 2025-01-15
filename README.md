@@ -30,4 +30,4 @@
 
 ## 开源协议
 
-借助 [MIT-LICENSE](https://mit-license.org/) 协议发布
+请遵守 [MIT-LICENSE](https://mit-license.org/) 协议
